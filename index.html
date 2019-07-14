@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Resturant management</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/jquery.datetimepicker.min.css">
+</head>
+<body>
+	
+
+      
+      	<nav id="navigation1" class="navbar navbar-expand-lg">
+      
+            <div class="col-md-8 col-sm-8 col-xs-12">
+                <div class="col-md-3 text-center social">
+					<a href=""><i class="fa fa-1x fa-facebook-official"></i></a>
+					<a href=""><i class="fa fa-1x fa-twitter"></i></a>
+					<a href=""><i class="fa fa-1x fa-linkedin"></i></a>
+					<a href=""><i class="fa fa-1x fa-instagram"></i></a>
+				</div>
+            </div>
+
+            <div class="col-md-2 col-sm-2 col-xs-12">
+            	<div class="icon" style="color:#fff">
+					<i class="fa fa-phone"> </i> +885-54-5454
+				</div>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-12">
+				<a href="#registrationModal" data-toggle="modal" class="btn btn-sm btn-outline-warning">Register</a>
+            </div>
+        </nav>
+
+
+<!-- slider -->
+
+ 	<!-- Swiper -->
+  <div class="carousel slide" data-ride="carousel" data-interval="3000" id="mycaro">
+			<ul class="carousel-indicators">
+                <li data-target="#mycaro" data-slide-to="0" class="active"></li>
+                <li data-target="#mycaro" data-slide-to="1"></li>
+                <li data-target="#mycaro" data-slide-to="2"></li>
+            </ul>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="images/s1.jpg" class="w-100" height="600px">
+					<div class="titleMessage">
+		                <div class="heading">
+		                    <p class="sub typed">Foisal Hossain</p>
+		                    <a href="#"
+		                             class="contactButton">Click Here</a>
+		                </div>
+            		</div>
+				</div>
+				<div class="carousel-item">
+					<img src="images/s2.jpg" class="w-100" height="600px">
+					<div class="titleMessage">
+		                <div class="heading">
+		                    <p class="sub typed">Foisal Hossain</p>
+		                    <a href="#"
+		                             class="contactButton">Click Here</a>
+		                </div>
+            		</div>
+
+				</div>
+				<div class="carousel-item">
+					<img src="images/s3.jpg" class="w-100" height="600px">
+					<div class="titleMessage">
+		                <div class="heading">
+		                    <p class="sub typed">Foisal Hossain</p>
+		                    <a href="#"
+		                             class="contactButton">Click Here</a>
+		                </div>
+            		</div>
+				</div>
+			</div>
+
+			<!-- <a href="#mycaro" class="carousel-control-prev" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+			<a href="#mycaro" class="carousel-control-next" data-slide="next"><span class="carousel-control-next-icon"></span></a> -->
+		</div>
+
+
+
+<!-- 2nd nav -->
+	<nav id="navigation" class="navbar navbar-expand-lg sticky-top">
+            <a class="navbar-brand" data-smooth="#index.html" href=""><img src="images/logo2.png" height="70px" width="90px"></a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" data-smooth="#getIn" href="#getIn">Get In <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-smooth="#food" href="#food">Food</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-smooth="#portfolio" href="#portfolio">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-smooth="#book" href="#book">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-smooth="#team" href="#team">Team</a>
+                    </li>
+                    
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" data-smooth="#contact" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+					<li><a href="#loginModal" data-toggle="modal" class="nav-link btn btn-sm btn-outline-warning">Login</a></li>
+					
+				</ul>
+            </div>
+            <div class="srcBox">
+				<input type="text" class="srcTxt" placeholder="Search..">
+				<a href="#" class="srcBtn"><i class="fa fa-search"></i></a>
+			</div>
+        </nav>
+
+
+
+<!-- Conatct Section -->
+          <section id="getIn" class="contactSection section">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-12 text-center" >
+                          <p class="wow bounceInDown" data-wow-delay="0.01s">Are you hungry?</p>
+                          <h2 class="wow fadeInLeft" data-wow-delay="0.3s">We will serve good food for You.</h2>
+                          <a href="#book" data-smooth="#book"
+                             class="contactButton wow fadeInUp" data-wow-delay="0.6s">BOOKING!</a>
+
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+
+
+
+
+
+           <!-- Food Area starts -->
+    <section class="food-area sectionPadding" id="food">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-top">
+                        <h3><span class="style-change">we serve</span> <br>delicious food</h3>
+                        <p class="pt-3">They're fill divide i their yielding our after have him fish on there for greater man moveth, moved Won't together isn't for fly divide mids fish firmament on net.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-food">
+                        <div class="food-img">
+                            <img src="images/food1.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="food-content">
+                            <div class="d-flex justify-content-between">
+                                <h5>Mexican Eggrolls</h5>
+                                <span class="style-change">$14.50</span>
+                            </div>
+                            <p class="pt-3">Face together given moveth divided form Of Seasons that fruitful.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-food mt-5 mt-sm-0">
+                        <div class="food-img">
+                            <img src="images/food2.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="food-content">
+                            <div class="d-flex justify-content-between">
+                                <h5>chicken burger</h5>
+                                <span class="style-change">$9.50</span>
+                            </div>
+                            <p class="pt-3">Face together given moveth divided form Of Seasons that fruitful.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-food mt-5 mt-md-0">
+                        <div class="food-img">
+                            <img src="images/food3.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="food-content">
+                            <div class="d-flex justify-content-between">
+                                <h5>topu lasange</h5>
+                                <span class="style-change">$12.50</span>
+                            </div>
+                            <p class="pt-3">Face together given moveth divided form Of Seasons that fruitful.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-food mt-5">
+                        <div class="food-img">
+                            <img src="images/food4.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="food-content">
+                            <div class="d-flex justify-content-between">
+                                <h5>pepper potatoas</h5>
+                                <span class="style-change">$14.50</span>
+                            </div>
+                            <p class="pt-3">Face together given moveth divided form Of Seasons that fruitful.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-food mt-5">
+                        <div class="food-img">
+                            <img src="images/food5.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="food-content">
+                            <div class="d-flex justify-content-between">
+                                <h5>bean salad</h5>
+                                <span class="style-change">$8.50</span>
+                            </div>
+                            <p class="pt-3">Face together given moveth divided form Of Seasons that fruitful.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-food mt-5">
+                        <div class="food-img">
+                            <img src="images/food6.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="food-content">
+                            <div class="d-flex justify-content-between">
+                                <h5>beatball hoagie</h5>
+                                <span class="style-change">$11.50</span>
+                            </div>
+                            <p class="pt-3">Face together given moveth divided form Of Seasons that fruitful.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- portfolio -->
+	<div class="container" id="portfolio">
+		<div class="row">
+			<div class="col-lg-12">
+				<ul class="filters text-center">
+                    <li class="active" data-filter="*"><a href="#!">All</a></li>
+                    <li data-filter=".html"><a href="#!">PIZZA</a></li>
+                    <li data-filter=".css"><a href="#!">PASTA</a></li>
+                    <li data-filter=".javascript"><a href="#!">NOODLES</a></li>
+                </ul>
+
+				
+				<div class="projects">
+
+                    <div class="row">
+
+                        <div class="col-lg-4 item html">
+                            
+                            <div class="card">
+
+                                <div class="card-head">
+                                    <img src="images/food1.jpg" alt="">
+                                    
+                                    <div class="card-hover">
+                                        <h2>Lorem, ipsum.</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quo repudiandae eaque maiores provident deserunt.</p>
+                                        <div>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked "></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="card-body text-center">
+                                		<h4 class="title">Pizza</h4>
+										<span class="style-change">$11.50</span>
+                                    
+                                    <a href="#!" class="btn btn-lg card-btn">Order</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-4 item css">
+                            
+                            <div class="card">
+
+                                <div class="card-head">
+                                    <img src="images/food2.jpg" alt="">
+                                    
+                                    <div class="card-hover">
+                                        <h2>Lorem, ipsum.</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quo repudiandae eaque maiores provident deserunt.</p>
+                                        <div>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked "></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-body text-center">
+                                    <h4 class="title">Pasta</h4>
+                                    <span class="style-change">$11.50</span>
+                                    <a href="#!" class="btn btn-lg card-btn">Order</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        
+                        <div class="col-lg-4 item javascript">
+                            
+                            <div class="card">
+
+                                <div class="card-head">
+                                    <img src="images/food3.jpg" alt="">
+                                    
+                                    <div class="card-hover">
+                                        <h2>Lorem, ipsum.</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quo repudiandae eaque maiores provident deserunt.</p>
+                                        <div>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked "></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-body text-center">
+                                    <h4 class="title">Noodles</h4>
+                                    <span class="style-change">$11.50</span>
+                                    <a href="#!" class="btn btn-lg card-btn">Order</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        
+                        <div class="col-lg-4 item html">
+                            
+                            <div class="card">
+
+                                <div class="card-head">
+                                    <img src="images/food4.jpg" alt="">
+                                    
+                                    <div class="card-hover">
+                                        <h2>Lorem, ipsum.</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quo repudiandae eaque maiores provident deserunt.</p>
+                                        <div>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked "></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-body text-center">
+                                    <h4 class="title">Pizza</h4>
+                                    <span class="style-change">$11.50</span>
+                                    <a href="#!" class="btn btn-lg card-btn">Order</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                   
+                        <div class="col-lg-4 item css">
+                            
+                            <div class="card">
+
+                                <div class="card-head">
+                                    <img src="images/food5.jpg" alt="">
+                                    
+                                    <div class="card-hover">
+                                        <h2>Lorem, ipsum.</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quo repudiandae eaque maiores provident deserunt.</p>
+                                        <div>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked "></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-body text-center">
+                                    <h4 class="title">Pasta</h4>
+                                    <span class="style-change">$11.50</span>
+                                    <a href="#!" class="btn btn-lg card-btn">Order</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-4 item html">
+                            
+                            <div class="card">
+
+                                <div class="card-head">
+                                    <img src="images/food6.jpg" alt="">
+                                    
+                                    <div class="card-hover">
+                                        <h2>Lorem, ipsum.</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quo repudiandae eaque maiores provident deserunt.</p>
+                                        <div>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked "></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-body text-center">
+                                    <h4 class="title">Pizza</h4>
+                                    <span class="style-change">$11.50</span>
+                                    <a href="#!" class="btn btn-lg card-btn">Order</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+			</div>
+		</div>
+	</div>
+
+<!-- Booking -->
+         <div id="book" class="book">
+          	<div class="container">
+          		<h3 class="text-center">Book Your Table</h3>
+          		<p>A quickt brown fox jumps over the lazy dog,the lazy dog.A quickt brown fox jumps over the lazy dog,the lazy dog.</p>
+          		<div class="row">
+	                <div class="col-lg-8 offset-lg-2">
+	                    <form action="#">
+	                    	<div class="bookUl">
+	                    		<ul class="text-center">
+				                    <li><i class="fa fa-2x fa-calendar"></i><input type="text" id="datepicker"></li>
+				                    <li><i class="fa fa-2x fa-clock-o"></i><input type="text" id="datepicker2"></li>
+				                    <li><i class="fa fa-2x fa-user-o"></i><input type="text"></li>
+
+				                </ul>
+	                    	</div>
+
+	                        
+	                        <div class="table-btn text-center">
+	                            <a href="#" class="template-btn template-btn2 mt-4">book a table</a>
+	                        </div>
+	                    </form>
+	                </div>
+            </div>
+          	</div>
+          </div>
+
+
+
+
+
+
+
+ <!-- tem -->
+          <div id="team" class="team">
+          	<div class="container">
+          		<h3 class="text-center">Our Team</h3>
+          		<p>A quickt brown fox jumps over the lazy dog,the lazy dog.</p>
+          		<div class="row">
+          			
+          			<div class="col-lg-3 col-md-3 single wow fadeInLeft" data-wow-delay="1.5s">
+          				<img src="images/team1.jpg" class="img-circle">
+          				<h4>Foisal Hossain</h4>
+          				<b>Manager of hotel</b>
+          				<p>A quickt brown fox jumps over the lazy dog,the lazy dog.</p>
+          				<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          				<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          				<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          				<a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+          			</div>
+          			<div class="col-lg-3 col-md-3 single wow fadeInLeft" data-wow-delay="1s">
+          				<img src="images/team2.jpg" class="img-circle">
+          				<h4>Foisal Hossain</h4>
+          				<b>Manager of hotel</b>
+          				<p>A quickt brown fox jumps over the lazy dog,the lazy dog.</p>
+          				<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          				<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          				<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          				<a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+          			</div>
+          			<div class="col-lg-3 single col-md-3 wow fadeInLeft" data-wow-delay="0.6s">
+          				<img src="images/team3.jpg" class="img-circle">
+          				<h4>Foisal Hossain</h4>
+          				<b>Manager of hotel</b>
+          				<p>A quickt brown fox jumps over the lazy dog,the lazy dog.</p>
+          				<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          				<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          				<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          				<a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+          			</div>
+          			<div class="col-lg-3 single col-md-3 wow fadeInLeft" data-wow-delay="0.2s">
+          				<img src="images/team4.jpg" class="img-circle">
+          				<h4>Foisal Hossain</h4>
+          				<b>Manager of hotel</b>
+          				<p>A quickt brown fox jumps over the lazy dog,the lazy dog.</p>
+          				<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          				<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          				<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          				<a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+          			</div>
+
+          			
+          		</div>
+          	</div>
+          </div>
+
+
+
+
+
+          <!-- START: Contact Info -->
+        <section class="cont" id="contact">
+        <div class="container" id="contact">
+            <div class="nk-gap-5"></div>
+            <div class="row vertical-gap">
+                <div class="col-lg-5">
+                    <!-- START: Info -->
+                    <h2 class="display-4">Contact Info:</h2>
+                    <div class="nk-gap mnt-3"></div>
+
+                    <p>Praesent interdum congue mauris, et fringilla lacus pel vitae. Quisque nisl mauris, aliquam eu ultrices vel, conse vitae sapien at imperdiet risus. Quisque cursus risus id. fermentum, in auctor quam consectetur.</p>
+
+                    <ul class="nk-contact-info">
+                        <li>
+                            <strong>Address:</strong> 10111 Santa Monica Boulevard, LA</li>
+                        <li>
+                            <strong>Phone:</strong> +44 987 065 908</li>
+                        <li>
+                            <strong>Email:</strong> info@Example.com</li>
+                        <li>
+                            <strong>Fax:</strong> +44 987 065 909</li>
+                    </ul>
+                    <!-- END: Info -->
+                </div>
+                <div class="col-lg-7">
+                    <!-- START: Form -->
+                    <form action="#" class="nk-form nk-form-ajax wow fadeIn" data-wow-delay="0.8">
+                        <div class="row vertical-gap">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control required" name="name" placeholder="Your Name">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control required" name="email" placeholder="Your Email">
+                            </div>
+                        </div>
+
+                        <div class="nk-gap-1"></div>
+                        <input type="text" class="form-control required" name="title" placeholder="Your Title">
+
+                        <div class="nk-gap-1"></div>
+                        <textarea class="form-control required" name="message" rows="8" placeholder="Your Comment" aria-required="true"></textarea>
+                        <div class="nk-gap-1"></div>
+                        <div class="nk-form-response-success"></div>
+                        <div class="nk-form-response-error"></div>
+                        <button>Send Message</button>
+                    </form>
+                    <!-- END: Form -->
+                </div>
+            </div>
+            <div class="nk-gap-5"></div>
+        </div>
+       </section> 
+        <!-- END: Contact Info -->
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+	<section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>About</h5>
+					<p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Contact</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-home mr-3"></i>Dhanmondi,Dhaka,Bangladesh</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-envelope mr-3"></i>amzad1044@gmail.com</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-phone mr-3"></i>+ 880 1627-335800</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-print mr-3"></i> + 01 234 567 89</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+				</hr>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p><u><a href="https://www.nationaltransaction.com/">National Transaction Corporation</a></u> is a Registered MSP/ISO of Elavon, Inc. Georgia [a wholly owned subsidiary of U.S. Bancorp, Minneapolis, MN]</p>
+					<p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="#" target="_blank">Amzad Hossain</a></p>
+				</div>
+				</hr>
+			</div>	
+		</div>
+	</section>
+	<!-- ./Footer -->
+
+	<!-- Scroll up Top -->
+	<a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Login -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="background:none;border: 0px;">
+      <div class="modal-body">
+	
+      	<div class="container login-container">
+            <div class="row">
+                <div class="col-md-12 login-form-2">
+                    <h3>Login</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Email *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Your Password *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btnSubmit" value="Login" />
+                        </div>
+                        <div class="form-group">
+
+                            <a href="#" class="ForgetPwd" value="Login">Forget Password?</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Registration -->
+<div class="modal fade" id="registrationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content" style="background:none;border: 0px;">
+	      
+	      <div class="modal-body">
+
+	      	<div class="container register">
+	      		<!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button> -->
+
+                <div class="row">
+                    <div class="col-md-3 register-left">
+                        <img src="images/rocket.png" alt=""/>
+                        <h3>Welcome</h3>
+                        <p>You are 30 seconds away from earning your own money!</p>
+                        
+                    </div>
+                    <div class="col-md-9 register-right">
+                        
+                        <div class="tab-content" id="myTabContent">
+                        	<form action="" method="post" id="form">
+
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <h3 class="register-heading">Sign up as a customer</h3>
+                                <div class="row register-form">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" id="firstName" class="form-control" placeholder="First Name *" value="" />
+                                            <span id="firstNameError" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" id="lastName" class="form-control" placeholder="Last Name *" value="" />
+                                            <span id="lastNameError" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" id="password" class="form-control" placeholder="Password *" value="" />
+                                            <input type="checkbox" id="showPassword" name="">Show Password
+                                            <span id="passwordError" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" id="conPassword" class="form-control"  placeholder="Confirm Password *" value="" />
+                                            <span id="conPasswordError" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="maxl">
+                                                <label class="radio inline"> 
+                                                    <input type="radio" name="gender" value="male" checked>
+                                                    <span> Male </span> 
+                                                </label>
+                                                <label class="radio inline"> 
+                                                    <input type="radio" name="gender" value="female">
+                                                    <span>Female </span> 
+                                                </label>
+                                                <span id="genderError" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" id="mail" class="form-control" placeholder="Your Email *" value="" />
+                                            <span id="mailError" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Your Phone" value="" />
+
+                                        </div>
+                                        <!-- <div class="form-group">
+                                            <select class="form-control" id="district">
+                                                <option class="hidden"  selected disabled>Please select your District</option>
+                                                <option value="dhaka">Dhaka</option>
+                                                <option value="feni">Feni</option>
+                                                <option value="ctg">Chittagong</option>
+                                            </select>
+                                            <span id="districtError" class="text-danger"></span>
+                                        </div> -->
+
+                                        
+                                        
+                                        
+                                        <input type="submit" id="btn" class="btnRegister"  value="Register"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+	      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script type="text/javascript" src="js/isotope.min.js"></script>
+<script src="js/jquery.datetimepicker.full.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+
+<script src="js/style.js"></script>
+</body>
+</html>
